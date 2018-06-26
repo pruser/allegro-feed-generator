@@ -12,12 +12,12 @@ import (
 )
 
 var generatedFeed = `<?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
-  <title>AllegroRSS - netflix</title>
+  <title>Allegro Feed Generator - netflix</title>
   <id></id>
   <updated>2018-06-24T14:32:28+02:00</updated>
   <link href=""></link>
   <author>
-    <name>Allegro RSS Generator</name>
+    <name>Allegro Feed Generator</name>
   </author>
   <entry>
     <title>Netflix 30 dni test / rrr</title>
@@ -41,7 +41,7 @@ var apiResponse = `
 <?xml version="1.0" encoding="UTF-8"?>
 <SOAP-ENV:Envelope 
     xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" 
-    xmlns:ns1="https://webapi.allegro.pl.allegrosandbox.pl/service.php">
+    xmlns:ns1="https://webapi.allegro.pl/service.php">
     <SOAP-ENV:Body>
         <ns1:doGetItemsListResponse>
             <ns1:itemsCount>2</ns1:itemsCount>

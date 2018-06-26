@@ -33,9 +33,9 @@ func (rf *DefaultResponseCreator) CreateResponse(title string, res *api_gen.DoGe
 	items := res.ItemsList.Item
 	now := rf.timeProvider.Now()
 	feed := &feeds.Feed{
-		Title:   "AllegroRSS - " + title,
+		Title:   "Allegro Feed Generator - " + title,
 		Link:    &feeds.Link{},
-		Author:  &feeds.Author{Name: "Allegro RSS Generator"},
+		Author:  &feeds.Author{Name: "Allegro Feed Generator"},
 		Updated: now,
 	}
 

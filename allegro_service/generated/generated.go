@@ -19,7 +19,7 @@ var _ time.Time
 var _ xml.Name
 
 type DoAddPackageInfoToPostBuyFormRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoAddPackageInfoToPostBuyFormRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoAddPackageInfoToPostBuyFormRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -29,13 +29,13 @@ type DoAddPackageInfoToPostBuyFormRequest struct {
 }
 
 type DoAddPackageInfoToPostBuyFormResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doAddPackageInfoToPostBuyFormResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doAddPackageInfoToPostBuyFormResponse"`
 
 	PostBuyFormPackageInfo *PostBuyFormPackageInfoStruct `xml:"postBuyFormPackageInfo,omitempty"`
 }
 
 type DoAddToBlackListRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoAddToBlackListRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoAddToBlackListRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -43,13 +43,13 @@ type DoAddToBlackListRequest struct {
 }
 
 type DoAddToBlackListResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doAddToBlackListResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doAddToBlackListResponse"`
 
 	UserBlackListResultsArr *ArrayOfUserblacklistaddresultstruct `xml:"userBlackListResultsArr,omitempty"`
 }
 
 type DoBidItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoBidItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoBidItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -67,13 +67,13 @@ type DoBidItemRequest struct {
 }
 
 type DoBidItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doBidItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doBidItemResponse"`
 
 	BidPrice string `xml:"bidPrice,omitempty"`
 }
 
 type DoCancelBidItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoCancelBidItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoCancelBidItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -87,7 +87,7 @@ type DoCancelBidItemRequest struct {
 }
 
 type DoCancelBidItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doCancelBidItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doCancelBidItemResponse"`
 
 	CancelBidValue int32 `xml:"cancelBidValue,omitempty"`
 
@@ -97,7 +97,7 @@ type DoCancelBidItemResponse struct {
 }
 
 type DoCancelRefundFormRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoCancelRefundFormRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoCancelRefundFormRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -105,13 +105,13 @@ type DoCancelRefundFormRequest struct {
 }
 
 type DoCancelRefundFormResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doCancelRefundFormResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doCancelRefundFormResponse"`
 
 	CancellationResult bool `xml:"cancellationResult,omitempty"`
 }
 
 type DoCancelRefundWarningRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoCancelRefundWarningRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoCancelRefundWarningRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -119,13 +119,13 @@ type DoCancelRefundWarningRequest struct {
 }
 
 type DoCancelRefundWarningResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doCancelRefundWarningResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doCancelRefundWarningResponse"`
 
 	CancellationResult bool `xml:"cancellationResult,omitempty"`
 }
 
 type DoCancelTransactionRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoCancelTransactionRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoCancelTransactionRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -133,13 +133,13 @@ type DoCancelTransactionRequest struct {
 }
 
 type DoCancelTransactionResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doCancelTransactionResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doCancelTransactionResponse"`
 
 	CancellationResult int32 `xml:"cancellationResult,omitempty"`
 }
 
 type DoChangeItemFieldsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoChangeItemFieldsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoChangeItemFieldsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -161,13 +161,13 @@ type DoChangeItemFieldsRequest struct {
 }
 
 type DoChangeItemFieldsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doChangeItemFieldsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doChangeItemFieldsResponse"`
 
 	ChangedItem *ChangedItemStruct `xml:"changedItem,omitempty"`
 }
 
 type DoChangePriceItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoChangePriceItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoChangePriceItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -183,7 +183,7 @@ type DoChangePriceItemRequest struct {
 }
 
 type DoChangePriceItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doChangePriceItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doChangePriceItemResponse"`
 
 	ItemInfo string `xml:"itemInfo,omitempty"`
 
@@ -191,7 +191,7 @@ type DoChangePriceItemResponse struct {
 }
 
 type DoChangeQuantityItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoChangeQuantityItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoChangeQuantityItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -201,7 +201,7 @@ type DoChangeQuantityItemRequest struct {
 }
 
 type DoChangeQuantityItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doChangeQuantityItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doChangeQuantityItemResponse"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -213,7 +213,7 @@ type DoChangeQuantityItemResponse struct {
 }
 
 type DoCheckItemDescriptionRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoCheckItemDescriptionRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoCheckItemDescriptionRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -221,13 +221,13 @@ type DoCheckItemDescriptionRequest struct {
 }
 
 type DoCheckItemDescriptionResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doCheckItemDescriptionResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doCheckItemDescriptionResponse"`
 
 	ItemDescription *ItemDescriptionStruct `xml:"itemDescription,omitempty"`
 }
 
 type DoCheckNewAuctionExtRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoCheckNewAuctionExtRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoCheckNewAuctionExtRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -241,7 +241,7 @@ type DoCheckNewAuctionExtRequest struct {
 }
 
 type DoCheckNewAuctionExtResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doCheckNewAuctionExtResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doCheckNewAuctionExtResponse"`
 
 	ItemPrice string `xml:"itemPrice,omitempty"`
 
@@ -251,7 +251,7 @@ type DoCheckNewAuctionExtResponse struct {
 }
 
 type DoFinishItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoFinishItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoFinishItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -263,13 +263,13 @@ type DoFinishItemRequest struct {
 }
 
 type DoFinishItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doFinishItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doFinishItemResponse"`
 
 	FinishValue int32 `xml:"finishValue,omitempty"`
 }
 
 type DoFinishItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoFinishItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoFinishItemsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -277,7 +277,7 @@ type DoFinishItemsRequest struct {
 }
 
 type DoFinishItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doFinishItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doFinishItemsResponse"`
 
 	FinishItemsSucceed *ArrayOfLong `xml:"finishItemsSucceed,omitempty"`
 
@@ -285,7 +285,7 @@ type DoFinishItemsResponse struct {
 }
 
 type DoGetArchiveRefundsListRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetArchiveRefundsListRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetArchiveRefundsListRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -293,7 +293,7 @@ type DoGetArchiveRefundsListRequest struct {
 }
 
 type DoGetArchiveRefundsListResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetArchiveRefundsListResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetArchiveRefundsListResponse"`
 
 	RefundsCount int32 `xml:"refundsCount,omitempty"`
 
@@ -301,7 +301,7 @@ type DoGetArchiveRefundsListResponse struct {
 }
 
 type DoGetBidItem2Request struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetBidItem2Request"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetBidItem2Request"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -309,25 +309,25 @@ type DoGetBidItem2Request struct {
 }
 
 type DoGetBidItem2Response struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetBidItem2Response"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetBidItem2Response"`
 
 	BiditemList *ArrayOfBidliststruct2 `xml:"biditemList,omitempty"`
 }
 
 type DoGetBlackListUsersRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetBlackListUsersRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetBlackListUsersRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 }
 
 type DoGetBlackListUsersResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetBlackListUsersResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetBlackListUsersResponse"`
 
 	BlackListUsers *ArrayOfBlackliststruct `xml:"blackListUsers,omitempty"`
 }
 
 type DoGetCategoryPathRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetCategoryPathRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetCategoryPathRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -335,13 +335,13 @@ type DoGetCategoryPathRequest struct {
 }
 
 type DoGetCategoryPathResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetCategoryPathResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetCategoryPathResponse"`
 
 	CategoryPath *ArrayOfCategorydata `xml:"categoryPath,omitempty"`
 }
 
 type DoGetCatsDataRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetCatsDataRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetCatsDataRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -353,7 +353,7 @@ type DoGetCatsDataRequest struct {
 }
 
 type DoGetCatsDataResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetCatsDataResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetCatsDataResponse"`
 
 	CatsList *ArrayOfCatinfotype `xml:"catsList,omitempty"`
 
@@ -363,7 +363,7 @@ type DoGetCatsDataResponse struct {
 }
 
 type DoGetCatsDataCountRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetCatsDataCountRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetCatsDataCountRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -375,7 +375,7 @@ type DoGetCatsDataCountRequest struct {
 }
 
 type DoGetCatsDataCountResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetCatsDataCountResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetCatsDataCountResponse"`
 
 	CatsCount int32 `xml:"catsCount,omitempty"`
 
@@ -385,7 +385,7 @@ type DoGetCatsDataCountResponse struct {
 }
 
 type DoGetCatsDataLimitRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetCatsDataLimitRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetCatsDataLimitRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -401,7 +401,7 @@ type DoGetCatsDataLimitRequest struct {
 }
 
 type DoGetCatsDataLimitResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetCatsDataLimitResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetCatsDataLimitResponse"`
 
 	CatsList *ArrayOfCatinfotype `xml:"catsList,omitempty"`
 
@@ -411,7 +411,7 @@ type DoGetCatsDataLimitResponse struct {
 }
 
 type DoGetCountriesRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetCountriesRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetCountriesRequest"`
 
 	CountryCode int32 `xml:"countryCode,omitempty"`
 
@@ -419,13 +419,13 @@ type DoGetCountriesRequest struct {
 }
 
 type DoGetCountriesResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetCountriesResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetCountriesResponse"`
 
 	CountryArray *ArrayOfCountryinfotype `xml:"countryArray,omitempty"`
 }
 
 type DoGetDealsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetDealsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetDealsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -435,13 +435,13 @@ type DoGetDealsRequest struct {
 }
 
 type DoGetDealsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetDealsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetDealsResponse"`
 
 	DealsList *ArrayOfDealsstruct `xml:"dealsList,omitempty"`
 }
 
 type DoGetFilledPostBuyFormsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetFilledPostBuyFormsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetFilledPostBuyFormsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -455,13 +455,13 @@ type DoGetFilledPostBuyFormsRequest struct {
 }
 
 type DoGetFilledPostBuyFormsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetFilledPostBuyFormsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetFilledPostBuyFormsResponse"`
 
 	FilledPostBuyForms *FilledPostBuyFormsStruct `xml:"filledPostBuyForms,omitempty"`
 }
 
 type DoGetFreeDeliveryAmountRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetFreeDeliveryAmountRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetFreeDeliveryAmountRequest"`
 
 	UserId int32 `xml:"userId,omitempty"`
 
@@ -471,7 +471,7 @@ type DoGetFreeDeliveryAmountRequest struct {
 }
 
 type DoGetFreeDeliveryAmountResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetFreeDeliveryAmountResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetFreeDeliveryAmountResponse"`
 
 	FreeDeliveryAmount float32 `xml:"freeDeliveryAmount,omitempty"`
 
@@ -479,7 +479,7 @@ type DoGetFreeDeliveryAmountResponse struct {
 }
 
 type DoGetItemFieldsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetItemFieldsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetItemFieldsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -487,7 +487,7 @@ type DoGetItemFieldsRequest struct {
 }
 
 type DoGetItemFieldsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetItemFieldsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetItemFieldsResponse"`
 
 	ItemFields *ArrayOfFieldsvalue `xml:"itemFields,omitempty"`
 
@@ -497,7 +497,7 @@ type DoGetItemFieldsResponse struct {
 }
 
 type DoGetItemsImagesRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetItemsImagesRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetItemsImagesRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -507,13 +507,13 @@ type DoGetItemsImagesRequest struct {
 }
 
 type DoGetItemsImagesResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetItemsImagesResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetItemsImagesResponse"`
 
 	Get_items_images_result *ArrayOfItemimagesstruct `xml:"get_items_images_result,omitempty"`
 }
 
 type DoGetItemsInfoRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetItemsInfoRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetItemsInfoRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -539,7 +539,7 @@ type DoGetItemsInfoRequest struct {
 }
 
 type DoGetItemsInfoResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetItemsInfoResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetItemsInfoResponse"`
 
 	ArrayItemListInfo *ArrayOfIteminfostruct `xml:"arrayItemListInfo,omitempty"`
 
@@ -568,7 +568,7 @@ type DoGetItemsListRequest struct {
 }
 
 type DoGetItemsListResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetItemsListResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetItemsListResponse"`
 
 	ItemsCount int32 `xml:"itemsCount,omitempty"`
 
@@ -584,19 +584,19 @@ type DoGetItemsListResponse struct {
 }
 
 type DoGetMyAddressesRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyAddressesRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyAddressesRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 }
 
 type DoGetMyAddressesResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyAddressesResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyAddressesResponse"`
 
 	AddressesInfo *ArrayOfAddressinfostruct `xml:"addressesInfo,omitempty"`
 }
 
 type DoGetMyBidItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyBidItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyBidItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -614,7 +614,7 @@ type DoGetMyBidItemsRequest struct {
 }
 
 type DoGetMyBidItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyBidItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyBidItemsResponse"`
 
 	BidItemsCounter int32 `xml:"bidItemsCounter,omitempty"`
 
@@ -622,25 +622,25 @@ type DoGetMyBidItemsResponse struct {
 }
 
 type DoGetMyCurrentShipmentPriceTypeRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyCurrentShipmentPriceTypeRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyCurrentShipmentPriceTypeRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 }
 
 type DoGetMyCurrentShipmentPriceTypeResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyCurrentShipmentPriceTypeResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyCurrentShipmentPriceTypeResponse"`
 
 	ShipmentPriceTypeId int32 `xml:"shipmentPriceTypeId,omitempty"`
 }
 
 type DoGetMyDataRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyDataRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyDataRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 }
 
 type DoGetMyDataResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyDataResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyDataResponse"`
 
 	UserData *UserDataStruct `xml:"userData,omitempty"`
 
@@ -658,7 +658,7 @@ type DoGetMyDataResponse struct {
 }
 
 type DoGetMyFutureItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyFutureItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyFutureItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -676,7 +676,7 @@ type DoGetMyFutureItemsRequest struct {
 }
 
 type DoGetMyFutureItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyFutureItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyFutureItemsResponse"`
 
 	FutureItemsCounter int32 `xml:"futureItemsCounter,omitempty"`
 
@@ -684,7 +684,7 @@ type DoGetMyFutureItemsResponse struct {
 }
 
 type DoGetMyIncomingPaymentsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyIncomingPaymentsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyIncomingPaymentsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -704,13 +704,13 @@ type DoGetMyIncomingPaymentsRequest struct {
 }
 
 type DoGetMyIncomingPaymentsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyIncomingPaymentsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyIncomingPaymentsResponse"`
 
 	PayTransIncome *ArrayOfUserincomingpaymentstruct `xml:"payTransIncome,omitempty"`
 }
 
 type DoGetMyIncomingPaymentsRefundsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyIncomingPaymentsRefundsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyIncomingPaymentsRefundsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -724,13 +724,13 @@ type DoGetMyIncomingPaymentsRefundsRequest struct {
 }
 
 type DoGetMyIncomingPaymentsRefundsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyIncomingPaymentsRefundsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyIncomingPaymentsRefundsResponse"`
 
 	PayTransIncomeRefunds *ArrayOfUserincomingpaymentrefundsstruct `xml:"payTransIncomeRefunds,omitempty"`
 }
 
 type DoGetMyNotSoldItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyNotSoldItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyNotSoldItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -750,7 +750,7 @@ type DoGetMyNotSoldItemsRequest struct {
 }
 
 type DoGetMyNotSoldItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyNotSoldItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyNotSoldItemsResponse"`
 
 	NotSoldItemsCounter int32 `xml:"notSoldItemsCounter,omitempty"`
 
@@ -758,7 +758,7 @@ type DoGetMyNotSoldItemsResponse struct {
 }
 
 type DoGetMyNotWonItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyNotWonItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyNotWonItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -776,7 +776,7 @@ type DoGetMyNotWonItemsRequest struct {
 }
 
 type DoGetMyNotWonItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyNotWonItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyNotWonItemsResponse"`
 
 	NotWonItemsCounter int32 `xml:"notWonItemsCounter,omitempty"`
 
@@ -784,7 +784,7 @@ type DoGetMyNotWonItemsResponse struct {
 }
 
 type DoGetMyPaymentsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyPaymentsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyPaymentsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -804,25 +804,25 @@ type DoGetMyPaymentsRequest struct {
 }
 
 type DoGetMyPaymentsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyPaymentsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyPaymentsResponse"`
 
 	PayTransPayment *ArrayOfUserpaymentstruct `xml:"payTransPayment,omitempty"`
 }
 
 type DoGetMyPaymentsInfoRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyPaymentsInfoRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyPaymentsInfoRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 }
 
 type DoGetMyPaymentsInfoResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyPaymentsInfoResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyPaymentsInfoResponse"`
 
 	PaymentsInfo *PaymentsInfoStruct `xml:"paymentsInfo,omitempty"`
 }
 
 type DoGetMyPaymentsRefundsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyPaymentsRefundsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyPaymentsRefundsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -836,13 +836,13 @@ type DoGetMyPaymentsRefundsRequest struct {
 }
 
 type DoGetMyPaymentsRefundsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyPaymentsRefundsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyPaymentsRefundsResponse"`
 
 	PayTransPaymentRefunds *ArrayOfUserpaymentrefundsstruct `xml:"payTransPaymentRefunds,omitempty"`
 }
 
 type DoGetMyPayoutsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyPayoutsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyPayoutsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -856,13 +856,13 @@ type DoGetMyPayoutsRequest struct {
 }
 
 type DoGetMyPayoutsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyPayoutsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyPayoutsResponse"`
 
 	PayTransPayout *ArrayOfUserpayoutstruct `xml:"payTransPayout,omitempty"`
 }
 
 type DoGetMyPayoutsDetailsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyPayoutsDetailsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyPayoutsDetailsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -874,7 +874,7 @@ type DoGetMyPayoutsDetailsRequest struct {
 }
 
 type DoGetMyPayoutsDetailsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyPayoutsDetailsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyPayoutsDetailsResponse"`
 
 	PaymentsCount int32 `xml:"paymentsCount,omitempty"`
 
@@ -890,7 +890,7 @@ type DoGetMyPayoutsDetailsResponse struct {
 }
 
 type DoGetMySellItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMySellItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMySellItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -910,7 +910,7 @@ type DoGetMySellItemsRequest struct {
 }
 
 type DoGetMySellItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMySellItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMySellItemsResponse"`
 
 	SellItemsCounter int32 `xml:"sellItemsCounter,omitempty"`
 
@@ -918,7 +918,7 @@ type DoGetMySellItemsResponse struct {
 }
 
 type DoGetMySoldItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMySoldItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMySoldItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -938,7 +938,7 @@ type DoGetMySoldItemsRequest struct {
 }
 
 type DoGetMySoldItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMySoldItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMySoldItemsResponse"`
 
 	SoldItemsCounter int32 `xml:"soldItemsCounter,omitempty"`
 
@@ -946,7 +946,7 @@ type DoGetMySoldItemsResponse struct {
 }
 
 type DoGetMyWonItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetMyWonItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetMyWonItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -964,7 +964,7 @@ type DoGetMyWonItemsRequest struct {
 }
 
 type DoGetMyWonItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetMyWonItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetMyWonItemsResponse"`
 
 	WonItemsCounter int32 `xml:"wonItemsCounter,omitempty"`
 
@@ -972,7 +972,7 @@ type DoGetMyWonItemsResponse struct {
 }
 
 type DoGetPaymentMethodsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetPaymentMethodsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetPaymentMethodsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -980,13 +980,13 @@ type DoGetPaymentMethodsRequest struct {
 }
 
 type DoGetPaymentMethodsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetPaymentMethodsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetPaymentMethodsResponse"`
 
 	PaymentMethods *ArrayOfPaymentmethodstruct `xml:"paymentMethods,omitempty"`
 }
 
 type DoGetPostBuyDataRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetPostBuyDataRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetPostBuyDataRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -996,13 +996,13 @@ type DoGetPostBuyDataRequest struct {
 }
 
 type DoGetPostBuyDataResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetPostBuyDataResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetPostBuyDataResponse"`
 
 	ItemsPostBuyData *ArrayOfItempostbuydatastruct `xml:"itemsPostBuyData,omitempty"`
 }
 
 type DoGetPostBuyFormsDataForBuyersRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetPostBuyFormsDataForBuyersRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetPostBuyFormsDataForBuyersRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1010,13 +1010,13 @@ type DoGetPostBuyFormsDataForBuyersRequest struct {
 }
 
 type DoGetPostBuyFormsDataForBuyersResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetPostBuyFormsDataForBuyersResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetPostBuyFormsDataForBuyersResponse"`
 
 	PostBuyFormDataForBuyers *ArrayOfPostbuyformforbuyersdatastruct `xml:"postBuyFormDataForBuyers,omitempty"`
 }
 
 type DoGetPostBuyFormsDataForSellersRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetPostBuyFormsDataForSellersRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetPostBuyFormsDataForSellersRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1024,13 +1024,13 @@ type DoGetPostBuyFormsDataForSellersRequest struct {
 }
 
 type DoGetPostBuyFormsDataForSellersResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetPostBuyFormsDataForSellersResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetPostBuyFormsDataForSellersResponse"`
 
 	PostBuyFormData *ArrayOfPostbuyformdatastruct `xml:"postBuyFormData,omitempty"`
 }
 
 type DoGetPostBuyFormsIdsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetPostBuyFormsIdsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetPostBuyFormsIdsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1042,7 +1042,7 @@ type DoGetPostBuyFormsIdsRequest struct {
 }
 
 type DoGetPostBuyFormsIdsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetPostBuyFormsIdsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetPostBuyFormsIdsResponse"`
 
 	FormsCount int32 `xml:"formsCount,omitempty"`
 
@@ -1052,7 +1052,7 @@ type DoGetPostBuyFormsIdsResponse struct {
 }
 
 type DoGetPostBuyItemInfoRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetPostBuyItemInfoRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetPostBuyItemInfoRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1060,13 +1060,13 @@ type DoGetPostBuyItemInfoRequest struct {
 }
 
 type DoGetPostBuyItemInfoResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetPostBuyItemInfoResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetPostBuyItemInfoResponse"`
 
 	ItemPostBuyFormInfo *ArrayOfPostbuyiteminfostruct `xml:"itemPostBuyFormInfo,omitempty"`
 }
 
 type DoGetRefundsDealsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetRefundsDealsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetRefundsDealsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1080,7 +1080,7 @@ type DoGetRefundsDealsRequest struct {
 }
 
 type DoGetRefundsDealsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetRefundsDealsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetRefundsDealsResponse"`
 
 	DealsCount int32 `xml:"dealsCount,omitempty"`
 
@@ -1090,7 +1090,7 @@ type DoGetRefundsDealsResponse struct {
 }
 
 type DoGetRefundsListRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetRefundsListRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetRefundsListRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1102,7 +1102,7 @@ type DoGetRefundsListRequest struct {
 }
 
 type DoGetRefundsListResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetRefundsListResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetRefundsListResponse"`
 
 	RefundsCount int32 `xml:"refundsCount,omitempty"`
 
@@ -1112,7 +1112,7 @@ type DoGetRefundsListResponse struct {
 }
 
 type DoGetRefundsReasonsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetRefundsReasonsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetRefundsReasonsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1120,7 +1120,7 @@ type DoGetRefundsReasonsRequest struct {
 }
 
 type DoGetRefundsReasonsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetRefundsReasonsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetRefundsReasonsResponse"`
 
 	ReasonsCount int32 `xml:"reasonsCount,omitempty"`
 
@@ -1128,7 +1128,7 @@ type DoGetRefundsReasonsResponse struct {
 }
 
 type DoGetRelatedItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetRelatedItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetRelatedItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1136,13 +1136,13 @@ type DoGetRelatedItemsRequest struct {
 }
 
 type DoGetRelatedItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetRelatedItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetRelatedItemsResponse"`
 
 	RelatedItems *RelatedItemsStruct `xml:"relatedItems,omitempty"`
 }
 
 type DoGetSellFormFieldsForCategoryRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSellFormFieldsForCategoryRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSellFormFieldsForCategoryRequest"`
 
 	WebapiKey string `xml:"webapiKey,omitempty"`
 
@@ -1152,13 +1152,13 @@ type DoGetSellFormFieldsForCategoryRequest struct {
 }
 
 type DoGetSellFormFieldsForCategoryResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSellFormFieldsForCategoryResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSellFormFieldsForCategoryResponse"`
 
 	SellFormFieldsForCategory *SellFormFieldsForCategoryStruct `xml:"sellFormFieldsForCategory,omitempty"`
 }
 
 type DoGetSessionHandleForWidgetRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSessionHandleForWidgetRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSessionHandleForWidgetRequest"`
 
 	WebapiKey string `xml:"webapiKey,omitempty"`
 
@@ -1166,7 +1166,7 @@ type DoGetSessionHandleForWidgetRequest struct {
 }
 
 type DoGetSessionHandleForWidgetResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSessionHandleForWidgetResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSessionHandleForWidgetResponse"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1174,7 +1174,7 @@ type DoGetSessionHandleForWidgetResponse struct {
 }
 
 type DoGetShipmentDataRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetShipmentDataRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetShipmentDataRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -1182,7 +1182,7 @@ type DoGetShipmentDataRequest struct {
 }
 
 type DoGetShipmentDataResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetShipmentDataResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetShipmentDataResponse"`
 
 	ShipmentDataList *ArrayOfShipmentdatastruct `xml:"shipmentDataList,omitempty"`
 
@@ -1190,7 +1190,7 @@ type DoGetShipmentDataResponse struct {
 }
 
 type DoGetShipmentDataForRelatedItemsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetShipmentDataForRelatedItemsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetShipmentDataForRelatedItemsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1198,13 +1198,13 @@ type DoGetShipmentDataForRelatedItemsRequest struct {
 }
 
 type DoGetShipmentDataForRelatedItemsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetShipmentDataForRelatedItemsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetShipmentDataForRelatedItemsResponse"`
 
 	RelatedItemsShipmentData *RelatedItemsShipmentDataStruct `xml:"relatedItemsShipmentData,omitempty"`
 }
 
 type DoGetShipmentPriceTypesRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetShipmentPriceTypesRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetShipmentPriceTypesRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -1212,13 +1212,13 @@ type DoGetShipmentPriceTypesRequest struct {
 }
 
 type DoGetShipmentPriceTypesResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetShipmentPriceTypesResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetShipmentPriceTypesResponse"`
 
 	ShipmentPriceTypes *ArrayOfShipmentpricetypestruct `xml:"shipmentPriceTypes,omitempty"`
 }
 
 type DoGetSiteJournalRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSiteJournalRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSiteJournalRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1228,13 +1228,13 @@ type DoGetSiteJournalRequest struct {
 }
 
 type DoGetSiteJournalResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSiteJournalResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSiteJournalResponse"`
 
 	SiteJournalArray *ArrayOfSitejournal `xml:"siteJournalArray,omitempty"`
 }
 
 type DoGetSiteJournalDealsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSiteJournalDealsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSiteJournalDealsRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1242,13 +1242,13 @@ type DoGetSiteJournalDealsRequest struct {
 }
 
 type DoGetSiteJournalDealsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSiteJournalDealsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSiteJournalDealsResponse"`
 
 	SiteJournalDeals *ArrayOfSitejournaldealsstruct `xml:"siteJournalDeals,omitempty"`
 }
 
 type DoGetSiteJournalDealsInfoRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSiteJournalDealsInfoRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSiteJournalDealsInfoRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1256,13 +1256,13 @@ type DoGetSiteJournalDealsInfoRequest struct {
 }
 
 type DoGetSiteJournalDealsInfoResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSiteJournalDealsInfoResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSiteJournalDealsInfoResponse"`
 
 	SiteJournalDealsInfo *SiteJournalDealsInfoStruct `xml:"siteJournalDealsInfo,omitempty"`
 }
 
 type DoGetSiteJournalInfoRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSiteJournalInfoRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSiteJournalInfoRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1272,13 +1272,13 @@ type DoGetSiteJournalInfoRequest struct {
 }
 
 type DoGetSiteJournalInfoResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSiteJournalInfoResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSiteJournalInfoResponse"`
 
 	SiteJournalInfo *SiteJournalInfo `xml:"siteJournalInfo,omitempty"`
 }
 
 type DoGetStatesInfoRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetStatesInfoRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetStatesInfoRequest"`
 
 	CountryCode int32 `xml:"countryCode,omitempty"`
 
@@ -1286,13 +1286,13 @@ type DoGetStatesInfoRequest struct {
 }
 
 type DoGetStatesInfoResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetStatesInfoResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetStatesInfoResponse"`
 
 	StatesInfoArray *ArrayOfStateinfostruct `xml:"statesInfoArray,omitempty"`
 }
 
 type DoGetSystemTimeRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetSystemTimeRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetSystemTimeRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -1300,13 +1300,13 @@ type DoGetSystemTimeRequest struct {
 }
 
 type DoGetSystemTimeResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetSystemTimeResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetSystemTimeResponse"`
 
 	ServerTime int64 `xml:"serverTime,omitempty"`
 }
 
 type DoGetTransactionsIDsRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetTransactionsIDsRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetTransactionsIDsRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1318,13 +1318,13 @@ type DoGetTransactionsIDsRequest struct {
 }
 
 type DoGetTransactionsIDsResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetTransactionsIDsResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetTransactionsIDsResponse"`
 
 	TransactionsIdsArray *ArrayOfLong `xml:"transactionsIdsArray,omitempty"`
 }
 
 type DoGetUserIDRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetUserIDRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetUserIDRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -1336,13 +1336,13 @@ type DoGetUserIDRequest struct {
 }
 
 type DoGetUserIDResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetUserIDResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetUserIDResponse"`
 
 	UserId int32 `xml:"userId,omitempty"`
 }
 
 type DoGetUserLoginRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoGetUserLoginRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoGetUserLoginRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -1352,13 +1352,13 @@ type DoGetUserLoginRequest struct {
 }
 
 type DoGetUserLoginResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doGetUserLoginResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doGetUserLoginResponse"`
 
 	UserLogin string `xml:"userLogin,omitempty"`
 }
 
 type DoLoginRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoLoginRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoLoginRequest"`
 
 	UserLogin string `xml:"userLogin,omitempty"`
 
@@ -1372,7 +1372,7 @@ type DoLoginRequest struct {
 }
 
 type DoLoginResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doLoginResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doLoginResponse"`
 
 	SessionHandlePart string `xml:"sessionHandlePart,omitempty"`
 
@@ -1382,7 +1382,7 @@ type DoLoginResponse struct {
 }
 
 type DoLoginEncRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoLoginEncRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoLoginEncRequest"`
 
 	UserLogin string `xml:"userLogin,omitempty"`
 
@@ -1396,7 +1396,7 @@ type DoLoginEncRequest struct {
 }
 
 type DoLoginEncResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doLoginEncResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doLoginEncResponse"`
 
 	SessionHandlePart string `xml:"sessionHandlePart,omitempty"`
 
@@ -1406,7 +1406,7 @@ type DoLoginEncResponse struct {
 }
 
 type DoLoginWithAccessTokenRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoLoginWithAccessTokenRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoLoginWithAccessTokenRequest"`
 
 	AccessToken string `xml:"accessToken,omitempty"`
 
@@ -1416,7 +1416,7 @@ type DoLoginWithAccessTokenRequest struct {
 }
 
 type DoLoginWithAccessTokenResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doLoginWithAccessTokenResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doLoginWithAccessTokenResponse"`
 
 	SessionHandlePart string `xml:"sessionHandlePart,omitempty"`
 
@@ -1426,7 +1426,7 @@ type DoLoginWithAccessTokenResponse struct {
 }
 
 type DoMyAccount2Request struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoMyAccount2Request"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoMyAccount2Request"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1440,13 +1440,13 @@ type DoMyAccount2Request struct {
 }
 
 type DoMyAccount2Response struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doMyAccount2Response"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doMyAccount2Response"`
 
 	MyaccountList *ArrayOfMyaccountstruct2 `xml:"myaccountList,omitempty"`
 }
 
 type DoMyAccountItemsCountRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoMyAccountItemsCountRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoMyAccountItemsCountRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1456,25 +1456,25 @@ type DoMyAccountItemsCountRequest struct {
 }
 
 type DoMyAccountItemsCountResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doMyAccountItemsCountResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doMyAccountItemsCountResponse"`
 
 	MyaccountItemsCount int32 `xml:"myaccountItemsCount,omitempty"`
 }
 
 type DoMyBillingRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoMyBillingRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoMyBillingRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 }
 
 type DoMyBillingResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doMyBillingResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doMyBillingResponse"`
 
 	MyBilling string `xml:"myBilling,omitempty"`
 }
 
 type DoMyBillingItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoMyBillingItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoMyBillingItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1484,7 +1484,7 @@ type DoMyBillingItemRequest struct {
 }
 
 type DoMyBillingItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doMyBillingItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doMyBillingItemResponse"`
 
 	EntryFees *ArrayOfItembilling `xml:"entryFees,omitempty"`
 
@@ -1492,7 +1492,7 @@ type DoMyBillingItemResponse struct {
 }
 
 type DoMyContactRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoMyContactRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoMyContactRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1504,13 +1504,13 @@ type DoMyContactRequest struct {
 }
 
 type DoMyContactResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doMyContactResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doMyContactResponse"`
 
 	MycontactList *ArrayOfMycontactlist `xml:"mycontactList,omitempty"`
 }
 
 type DoNewAuctionExtRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoNewAuctionExtRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoNewAuctionExtRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1532,7 +1532,7 @@ type DoNewAuctionExtRequest struct {
 }
 
 type DoNewAuctionExtResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doNewAuctionExtResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doNewAuctionExtResponse"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -1542,7 +1542,7 @@ type DoNewAuctionExtResponse struct {
 }
 
 type DoQueryAllSysStatusRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoQueryAllSysStatusRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoQueryAllSysStatusRequest"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -1550,13 +1550,13 @@ type DoQueryAllSysStatusRequest struct {
 }
 
 type DoQueryAllSysStatusResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doQueryAllSysStatusResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doQueryAllSysStatusResponse"`
 
 	SysCountryStatus *ArrayOfSysstatustype `xml:"sysCountryStatus,omitempty"`
 }
 
 type DoQuerySysStatusRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoQuerySysStatusRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoQuerySysStatusRequest"`
 
 	Sysvar int32 `xml:"sysvar,omitempty"`
 
@@ -1566,7 +1566,7 @@ type DoQuerySysStatusRequest struct {
 }
 
 type DoQuerySysStatusResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doQuerySysStatusResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doQuerySysStatusResponse"`
 
 	Info string `xml:"info,omitempty"`
 
@@ -1574,7 +1574,7 @@ type DoQuerySysStatusResponse struct {
 }
 
 type DoRemoveFromBlackListRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoRemoveFromBlackListRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoRemoveFromBlackListRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1582,13 +1582,13 @@ type DoRemoveFromBlackListRequest struct {
 }
 
 type DoRemoveFromBlackListResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doRemoveFromBlackListResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doRemoveFromBlackListResponse"`
 
 	BlackListResult *ArrayOfBlacklistresstruct `xml:"blackListResult,omitempty"`
 }
 
 type DoRequestCancelBidRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoRequestCancelBidRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoRequestCancelBidRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1598,25 +1598,25 @@ type DoRequestCancelBidRequest struct {
 }
 
 type DoRequestCancelBidResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doRequestCancelBidResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doRequestCancelBidResponse"`
 
 	RequestValue int32 `xml:"requestValue,omitempty"`
 }
 
 type DoRequestPayoutRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoRequestPayoutRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoRequestPayoutRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 }
 
 type DoRequestPayoutResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doRequestPayoutResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doRequestPayoutResponse"`
 
 	RequestPayout *RequestPayoutStruct `xml:"requestPayout,omitempty"`
 }
 
 type DoRequestSurchargeRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoRequestSurchargeRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoRequestSurchargeRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1628,13 +1628,13 @@ type DoRequestSurchargeRequest struct {
 }
 
 type DoRequestSurchargeResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doRequestSurchargeResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doRequestSurchargeResponse"`
 
 	SurchargeResult int32 `xml:"surchargeResult,omitempty"`
 }
 
 type DoSellSomeAgainRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSellSomeAgainRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSellSomeAgainRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1652,7 +1652,7 @@ type DoSellSomeAgainRequest struct {
 }
 
 type DoSellSomeAgainResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSellSomeAgainResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSellSomeAgainResponse"`
 
 	ItemsSellAgain *ArrayOfStructsellagain `xml:"itemsSellAgain,omitempty"`
 
@@ -1662,7 +1662,7 @@ type DoSellSomeAgainResponse struct {
 }
 
 type DoSellSomeAgainInShopRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSellSomeAgainInShopRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSellSomeAgainInShopRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1682,7 +1682,7 @@ type DoSellSomeAgainInShopRequest struct {
 }
 
 type DoSellSomeAgainInShopResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSellSomeAgainInShopResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSellSomeAgainInShopResponse"`
 
 	ItemsSellAgain *ArrayOfStructsellagain `xml:"itemsSellAgain,omitempty"`
 
@@ -1692,7 +1692,7 @@ type DoSellSomeAgainInShopResponse struct {
 }
 
 type DoSendEmailToUserRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSendEmailToUserRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSendEmailToUserRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1708,7 +1708,7 @@ type DoSendEmailToUserRequest struct {
 }
 
 type DoSendEmailToUserResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSendEmailToUserResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSendEmailToUserResponse"`
 
 	MailToUserReceiverId int64 `xml:"mailToUserReceiverId,omitempty"`
 
@@ -1716,7 +1716,7 @@ type DoSendEmailToUserResponse struct {
 }
 
 type DoSendPostBuyFormRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSendPostBuyFormRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSendPostBuyFormRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1726,13 +1726,13 @@ type DoSendPostBuyFormRequest struct {
 }
 
 type DoSendPostBuyFormResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSendPostBuyFormResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSendPostBuyFormResponse"`
 
 	PostBuyForm *PostBuyFormStruct `xml:"postBuyForm,omitempty"`
 }
 
 type DoSendRefundFormRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSendRefundFormRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSendRefundFormRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1744,13 +1744,13 @@ type DoSendRefundFormRequest struct {
 }
 
 type DoSendRefundFormResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSendRefundFormResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSendRefundFormResponse"`
 
 	RefundId int32 `xml:"refundId,omitempty"`
 }
 
 type DoSetFreeDeliveryAmountRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSetFreeDeliveryAmountRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSetFreeDeliveryAmountRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1760,13 +1760,13 @@ type DoSetFreeDeliveryAmountRequest struct {
 }
 
 type DoSetFreeDeliveryAmountResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSetFreeDeliveryAmountResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSetFreeDeliveryAmountResponse"`
 
 	ResponseStatus bool `xml:"responseStatus,omitempty"`
 }
 
 type DoSetShipmentPriceTypeRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoSetShipmentPriceTypeRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoSetShipmentPriceTypeRequest"`
 
 	SessionId string `xml:"sessionId,omitempty"`
 
@@ -1774,13 +1774,13 @@ type DoSetShipmentPriceTypeRequest struct {
 }
 
 type DoSetShipmentPriceTypeResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doSetShipmentPriceTypeResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doSetShipmentPriceTypeResponse"`
 
 	OperationResult int32 `xml:"operationResult,omitempty"`
 }
 
 type DoShowItemInfoExtRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoShowItemInfoExtRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoShowItemInfoExtRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1806,7 +1806,7 @@ type DoShowItemInfoExtRequest struct {
 }
 
 type DoShowItemInfoExtResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doShowItemInfoExtResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doShowItemInfoExtResponse"`
 
 	ItemListInfoExt *ItemInfoExt `xml:"itemListInfoExt,omitempty"`
 
@@ -1832,7 +1832,7 @@ type DoShowItemInfoExtResponse struct {
 }
 
 type DoShowUserRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoShowUserRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoShowUserRequest"`
 
 	WebapiKey string `xml:"webapiKey,omitempty"`
 
@@ -1844,7 +1844,7 @@ type DoShowUserRequest struct {
 }
 
 type DoShowUserResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doShowUserResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doShowUserResponse"`
 
 	UserId int64 `xml:"userId,omitempty"`
 
@@ -1896,7 +1896,7 @@ type DoShowUserResponse struct {
 }
 
 type DoVerifyItemRequest struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DoVerifyItemRequest"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DoVerifyItemRequest"`
 
 	SessionHandle string `xml:"sessionHandle,omitempty"`
 
@@ -1904,7 +1904,7 @@ type DoVerifyItemRequest struct {
 }
 
 type DoVerifyItemResponse struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php doVerifyItemResponse"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php doVerifyItemResponse"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -1914,7 +1914,7 @@ type DoVerifyItemResponse struct {
 }
 
 type PackageInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PackageInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PackageInfoStruct"`
 
 	OperatorId int32 `xml:"operatorId,omitempty"`
 
@@ -1924,19 +1924,19 @@ type PackageInfoStruct struct {
 }
 
 type ArrayOfPackageinfostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPackageinfostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPackageinfostruct"`
 
 	Item []*PackageInfoStruct `xml:"item,omitempty"`
 }
 
 type ArrayOfString struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfString"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfString"`
 
 	Item []string `xml:"item,omitempty"`
 }
 
 type PostBuyFormPackageInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormPackageInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormPackageInfoStruct"`
 
 	PackageIdsAdded *ArrayOfString `xml:"packageIdsAdded,omitempty"`
 
@@ -1946,7 +1946,7 @@ type PostBuyFormPackageInfoStruct struct {
 }
 
 type UserBlackListStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserBlackListStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserBlackListStruct"`
 
 	UserId int32 `xml:"userId,omitempty"`
 
@@ -1954,13 +1954,13 @@ type UserBlackListStruct struct {
 }
 
 type ArrayOfUserblackliststruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserblackliststruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserblackliststruct"`
 
 	Item []*UserBlackListStruct `xml:"item,omitempty"`
 }
 
 type UserBlackListAddResultStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserBlackListAddResultStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserBlackListAddResultStruct"`
 
 	UserId int32 `xml:"userId,omitempty"`
 
@@ -1972,13 +1972,13 @@ type UserBlackListAddResultStruct struct {
 }
 
 type ArrayOfUserblacklistaddresultstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserblacklistaddresultstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserblacklistaddresultstruct"`
 
 	Item []*UserBlackListAddResultStruct `xml:"item,omitempty"`
 }
 
 type PharmacyRecipientDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PharmacyRecipientDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PharmacyRecipientDataStruct"`
 
 	RecipientFirstName string `xml:"recipientFirstName,omitempty"`
 
@@ -1992,13 +1992,13 @@ type PharmacyRecipientDataStruct struct {
 }
 
 type ArrayOfInt struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfInt"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfInt"`
 
 	Item []int32 `xml:"item,omitempty"`
 }
 
 type RangeIntValueStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RangeIntValueStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RangeIntValueStruct"`
 
 	FvalueRangeIntMin int32 `xml:"fvalueRangeIntMin,omitempty"`
 
@@ -2006,7 +2006,7 @@ type RangeIntValueStruct struct {
 }
 
 type RangeFloatValueStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RangeFloatValueStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RangeFloatValueStruct"`
 
 	FvalueRangeFloatMin float32 `xml:"fvalueRangeFloatMin,omitempty"`
 
@@ -2014,7 +2014,7 @@ type RangeFloatValueStruct struct {
 }
 
 type RangeDateValueStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RangeDateValueStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RangeDateValueStruct"`
 
 	FvalueRangeDateMin string `xml:"fvalueRangeDateMin,omitempty"`
 
@@ -2022,7 +2022,7 @@ type RangeDateValueStruct struct {
 }
 
 type FieldsValue struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FieldsValue"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FieldsValue"`
 
 	Fid int32 `xml:"fid,omitempty"`
 
@@ -2046,13 +2046,13 @@ type FieldsValue struct {
 }
 
 type ArrayOfFieldsvalue struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFieldsvalue"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFieldsvalue"`
 
 	Item []*FieldsValue `xml:"item,omitempty"`
 }
 
 type VariantQuantityStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php VariantQuantityStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php VariantQuantityStruct"`
 
 	Mask int32 `xml:"mask,omitempty"`
 
@@ -2060,13 +2060,13 @@ type VariantQuantityStruct struct {
 }
 
 type ArrayOfVariantquantitystruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfVariantquantitystruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfVariantquantitystruct"`
 
 	Item []*VariantQuantityStruct `xml:"item,omitempty"`
 }
 
 type VariantStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php VariantStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php VariantStruct"`
 
 	Fid int32 `xml:"fid,omitempty"`
 
@@ -2074,25 +2074,25 @@ type VariantStruct struct {
 }
 
 type ArrayOfVariantstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfVariantstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfVariantstruct"`
 
 	Item []*VariantStruct `xml:"item,omitempty"`
 }
 
 type TagNameStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php TagNameStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php TagNameStruct"`
 
 	TagName string `xml:"tagName,omitempty"`
 }
 
 type ArrayOfTagnamestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfTagnamestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfTagnamestruct"`
 
 	Item []*TagNameStruct `xml:"item,omitempty"`
 }
 
 type AfterSalesServiceConditionsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AfterSalesServiceConditionsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AfterSalesServiceConditionsStruct"`
 
 	ImpliedWarranty string `xml:"impliedWarranty,omitempty"`
 
@@ -2102,7 +2102,7 @@ type AfterSalesServiceConditionsStruct struct {
 }
 
 type AmountStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AmountStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AmountStruct"`
 
 	AmountValue float32 `xml:"amountValue,omitempty"`
 
@@ -2110,7 +2110,7 @@ type AmountStruct struct {
 }
 
 type ItemSurchargeStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemSurchargeStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemSurchargeStruct"`
 
 	SurchargeDescription string `xml:"surchargeDescription,omitempty"`
 
@@ -2118,13 +2118,13 @@ type ItemSurchargeStruct struct {
 }
 
 type ArrayOfItemsurchargestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItemsurchargestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItemsurchargestruct"`
 
 	Item []*ItemSurchargeStruct `xml:"item,omitempty"`
 }
 
 type ChangedItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ChangedItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ChangedItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -2134,13 +2134,13 @@ type ChangedItemStruct struct {
 }
 
 type ItemDescriptionStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemDescriptionStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemDescriptionStruct"`
 
 	DescriptionResult string `xml:"descriptionResult,omitempty"`
 }
 
 type FinishItemsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FinishItemsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FinishItemsStruct"`
 
 	FinishItemId int64 `xml:"finishItemId,omitempty"`
 
@@ -2150,19 +2150,19 @@ type FinishItemsStruct struct {
 }
 
 type ArrayOfFinishitemsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFinishitemsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFinishitemsstruct"`
 
 	Item []*FinishItemsStruct `xml:"item,omitempty"`
 }
 
 type ArrayOfLong struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfLong"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfLong"`
 
 	Item []int64 `xml:"item,omitempty"`
 }
 
 type FinishFailureStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FinishFailureStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FinishFailureStruct"`
 
 	FinishItemId int64 `xml:"finishItemId,omitempty"`
 
@@ -2172,13 +2172,13 @@ type FinishFailureStruct struct {
 }
 
 type ArrayOfFinishfailurestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFinishfailurestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFinishfailurestruct"`
 
 	Item []*FinishFailureStruct `xml:"item,omitempty"`
 }
 
 type ArchiveRefundsListTypeStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArchiveRefundsListTypeStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArchiveRefundsListTypeStruct"`
 
 	RefundId int32 `xml:"refundId,omitempty"`
 
@@ -2188,25 +2188,25 @@ type ArchiveRefundsListTypeStruct struct {
 }
 
 type ArrayOfArchiverefundslisttypestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfArchiverefundslisttypestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfArchiverefundslisttypestruct"`
 
 	Item []*ArchiveRefundsListTypeStruct `xml:"item,omitempty"`
 }
 
 type BidListStruct2 struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php BidListStruct2"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php BidListStruct2"`
 
 	BidsArray *ArrayOfString `xml:"bidsArray,omitempty"`
 }
 
 type ArrayOfBidliststruct2 struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfBidliststruct2"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfBidliststruct2"`
 
 	Item []*BidListStruct2 `xml:"item,omitempty"`
 }
 
 type BlackListStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php BlackListStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php BlackListStruct"`
 
 	UserId int64 `xml:"userId,omitempty"`
 
@@ -2218,13 +2218,13 @@ type BlackListStruct struct {
 }
 
 type ArrayOfBlackliststruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfBlackliststruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfBlackliststruct"`
 
 	Item []*BlackListStruct `xml:"item,omitempty"`
 }
 
 type CategoryData struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CategoryData"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CategoryData"`
 
 	CatId int32 `xml:"catId,omitempty"`
 
@@ -2242,13 +2242,13 @@ type CategoryData struct {
 }
 
 type ArrayOfCategorydata struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfCategorydata"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfCategorydata"`
 
 	Item []*CategoryData `xml:"item,omitempty"`
 }
 
 type CatInfoType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CatInfoType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CatInfoType"`
 
 	CatId int32 `xml:"catId,omitempty"`
 
@@ -2264,13 +2264,13 @@ type CatInfoType struct {
 }
 
 type ArrayOfCatinfotype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfCatinfotype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfCatinfotype"`
 
 	Item []*CatInfoType `xml:"item,omitempty"`
 }
 
 type CountryInfoType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CountryInfoType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CountryInfoType"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -2278,13 +2278,13 @@ type CountryInfoType struct {
 }
 
 type ArrayOfCountryinfotype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfCountryinfotype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfCountryinfotype"`
 
 	Item []*CountryInfoType `xml:"item,omitempty"`
 }
 
 type DealsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DealsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DealsStruct"`
 
 	DealId int64 `xml:"dealId,omitempty"`
 
@@ -2298,19 +2298,19 @@ type DealsStruct struct {
 }
 
 type ArrayOfDealsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfDealsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfDealsstruct"`
 
 	Item []*DealsStruct `xml:"item,omitempty"`
 }
 
 type FilledPostBuyFormsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FilledPostBuyFormsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FilledPostBuyFormsStruct"`
 
 	TransactionIds *ArrayOfLong `xml:"transactionIds,omitempty"`
 }
 
 type ItemGetImage struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemGetImage"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemGetImage"`
 
 	ItId int64 `xml:"itId,omitempty"`
 
@@ -2320,13 +2320,13 @@ type ItemGetImage struct {
 }
 
 type ArrayOfItemgetimage struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItemgetimage"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItemgetimage"`
 
 	Item []*ItemGetImage `xml:"item,omitempty"`
 }
 
 type ItemImageList struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemImageList"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemImageList"`
 
 	ImageType int32 `xml:"imageType,omitempty"`
 
@@ -2334,13 +2334,13 @@ type ItemImageList struct {
 }
 
 type ArrayOfItemimagelist struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItemimagelist"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItemimagelist"`
 
 	Item []*ItemImageList `xml:"item,omitempty"`
 }
 
 type ItemImagesStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemImagesStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemImagesStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -2348,19 +2348,19 @@ type ItemImagesStruct struct {
 }
 
 type ArrayOfItemimagesstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItemimagesstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItemimagesstruct"`
 
 	Item []*ItemImagesStruct `xml:"item,omitempty"`
 }
 
 type DurationInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php DurationInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php DurationInfoStruct"`
 
 	DurationType int32 `xml:"durationType,omitempty"`
 }
 
 type ItemInfo struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemInfo"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemInfo"`
 
 	ItId int64 `xml:"itId,omitempty"`
 
@@ -2454,7 +2454,7 @@ type ItemInfo struct {
 }
 
 type ItemCatList struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemCatList"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemCatList"`
 
 	CatLevel int32 `xml:"catLevel,omitempty"`
 
@@ -2464,13 +2464,13 @@ type ItemCatList struct {
 }
 
 type ArrayOfItemcatlist struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItemcatlist"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItemcatlist"`
 
 	Item []*ItemCatList `xml:"item,omitempty"`
 }
 
 type AttribStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AttribStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AttribStruct"`
 
 	AttribName string `xml:"attribName,omitempty"`
 
@@ -2478,13 +2478,13 @@ type AttribStruct struct {
 }
 
 type ArrayOfAttribstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfAttribstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfAttribstruct"`
 
 	Item []*AttribStruct `xml:"item,omitempty"`
 }
 
 type FulfillmentTimeStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FulfillmentTimeStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FulfillmentTimeStruct"`
 
 	FulfillmentTimeFrom int32 `xml:"fulfillmentTimeFrom,omitempty"`
 
@@ -2492,7 +2492,7 @@ type FulfillmentTimeStruct struct {
 }
 
 type PostageStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostageStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostageStruct"`
 
 	PostageAmount float32 `xml:"postageAmount,omitempty"`
 
@@ -2510,13 +2510,13 @@ type PostageStruct struct {
 }
 
 type ArrayOfPostagestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostagestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostagestruct"`
 
 	Item []*PostageStruct `xml:"item,omitempty"`
 }
 
 type ItemPaymentOptions struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemPaymentOptions"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemPaymentOptions"`
 
 	PayOptionTransfer int32 `xml:"payOptionTransfer,omitempty"`
 
@@ -2534,7 +2534,7 @@ type ItemPaymentOptions struct {
 }
 
 type CompanyInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CompanyInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CompanyInfoStruct"`
 
 	CompanyFirstName string `xml:"companyFirstName,omitempty"`
 
@@ -2552,7 +2552,7 @@ type CompanyInfoStruct struct {
 }
 
 type ProductParametersStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ProductParametersStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ProductParametersStruct"`
 
 	ProductParameterName string `xml:"productParameterName,omitempty"`
 
@@ -2562,13 +2562,13 @@ type ProductParametersStruct struct {
 }
 
 type ArrayOfProductparametersstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfProductparametersstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfProductparametersstruct"`
 
 	Item []*ProductParametersStruct `xml:"item,omitempty"`
 }
 
 type ProductParametersGroupStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ProductParametersGroupStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ProductParametersGroupStruct"`
 
 	ProductParametersGroupName string `xml:"productParametersGroupName,omitempty"`
 
@@ -2576,13 +2576,13 @@ type ProductParametersGroupStruct struct {
 }
 
 type ArrayOfProductparametersgroupstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfProductparametersgroupstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfProductparametersgroupstruct"`
 
 	Item []*ProductParametersGroupStruct `xml:"item,omitempty"`
 }
 
 type ProductStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ProductStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ProductStruct"`
 
 	ProductId int64 `xml:"productId,omitempty"`
 
@@ -2596,7 +2596,7 @@ type ProductStruct struct {
 }
 
 type ItemInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemInfoStruct"`
 
 	ItemInfo *ItemInfo `xml:"itemInfo,omitempty"`
 
@@ -2620,13 +2620,13 @@ type ItemInfoStruct struct {
 }
 
 type ArrayOfIteminfostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfIteminfostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfIteminfostruct"`
 
 	Item []*ItemInfoStruct `xml:"item,omitempty"`
 }
 
 type RangeValueType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RangeValueType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RangeValueType"`
 
 	RangeValueMin string `xml:"rangeValueMin,omitempty"`
 
@@ -2634,7 +2634,7 @@ type RangeValueType struct {
 }
 
 type FilterOptionsType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FilterOptionsType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FilterOptionsType"`
 
 	FilterId string `xml:"filterId,omitempty"`
 
@@ -2644,13 +2644,13 @@ type FilterOptionsType struct {
 }
 
 type ArrayOfFilteroptionstype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFilteroptionstype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFilteroptionstype"`
 
 	Item []*FilterOptionsType `xml:"item,omitempty"`
 }
 
 type SortOptionsType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SortOptionsType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SortOptionsType"`
 
 	SortType string `xml:"sortType,omitempty"`
 
@@ -2658,7 +2658,7 @@ type SortOptionsType struct {
 }
 
 type UserInfoType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserInfoType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserInfoType"`
 
 	UserId int32 `xml:"userId,omitempty"`
 
@@ -2672,7 +2672,7 @@ type UserInfoType struct {
 }
 
 type PriceInfoType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PriceInfoType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PriceInfoType"`
 
 	PriceType string `xml:"priceType,omitempty"`
 
@@ -2680,13 +2680,13 @@ type PriceInfoType struct {
 }
 
 type ArrayOfPriceinfotype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPriceinfotype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPriceinfotype"`
 
 	Item []*PriceInfoType `xml:"item,omitempty"`
 }
 
 type PhotoInfoType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PhotoInfoType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PhotoInfoType"`
 
 	PhotoSize string `xml:"photoSize,omitempty"`
 
@@ -2696,13 +2696,13 @@ type PhotoInfoType struct {
 }
 
 type ArrayOfPhotoinfotype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPhotoinfotype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPhotoinfotype"`
 
 	Item []*PhotoInfoType `xml:"item,omitempty"`
 }
 
 type ParameterInfoType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ParameterInfoType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ParameterInfoType"`
 
 	ParameterName string `xml:"parameterName,omitempty"`
 
@@ -2714,13 +2714,13 @@ type ParameterInfoType struct {
 }
 
 type ArrayOfParameterinfotype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfParameterinfotype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfParameterinfotype"`
 
 	Item []*ParameterInfoType `xml:"item,omitempty"`
 }
 
 type AdvertInfoType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AdvertInfoType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AdvertInfoType"`
 
 	ServiceId string `xml:"serviceId,omitempty"`
 
@@ -2728,7 +2728,7 @@ type AdvertInfoType struct {
 }
 
 type ItemsListType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemsListType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemsListType"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -2766,13 +2766,13 @@ type ItemsListType struct {
 }
 
 type ArrayOfItemslisttype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItemslisttype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItemslisttype"`
 
 	Item []*ItemsListType `xml:"item,omitempty"`
 }
 
 type CategoryTreeType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CategoryTreeType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CategoryTreeType"`
 
 	CategoryId int32 `xml:"categoryId,omitempty"`
 
@@ -2784,13 +2784,13 @@ type CategoryTreeType struct {
 }
 
 type ArrayOfCategorytreetype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfCategorytreetype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfCategorytreetype"`
 
 	Item []*CategoryTreeType `xml:"item,omitempty"`
 }
 
 type CategoryPathType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CategoryPathType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CategoryPathType"`
 
 	CategoryId int32 `xml:"categoryId,omitempty"`
 
@@ -2800,13 +2800,13 @@ type CategoryPathType struct {
 }
 
 type ArrayOfCategorypathtype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfCategorypathtype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfCategorypathtype"`
 
 	Item []*CategoryPathType `xml:"item,omitempty"`
 }
 
 type CategoriesListType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CategoriesListType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CategoriesListType"`
 
 	CategoriesTree *ArrayOfCategorytreetype `xml:"categoriesTree,omitempty"`
 
@@ -2814,7 +2814,7 @@ type CategoriesListType struct {
 }
 
 type FilterValueType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FilterValueType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FilterValueType"`
 
 	FilterValueId string `xml:"filterValueId,omitempty"`
 
@@ -2824,13 +2824,13 @@ type FilterValueType struct {
 }
 
 type ArrayOfFiltervaluetype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFiltervaluetype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFiltervaluetype"`
 
 	Item []*FilterValueType `xml:"item,omitempty"`
 }
 
 type FilterRelationType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FilterRelationType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FilterRelationType"`
 
 	RelationAnd *ArrayOfString `xml:"relationAnd,omitempty"`
 
@@ -2840,7 +2840,7 @@ type FilterRelationType struct {
 }
 
 type FiltersListType struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FiltersListType"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FiltersListType"`
 
 	FilterId string `xml:"filterId,omitempty"`
 
@@ -2862,13 +2862,13 @@ type FiltersListType struct {
 }
 
 type ArrayOfFilterslisttype struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFilterslisttype"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFilterslisttype"`
 
 	Item []*FiltersListType `xml:"item,omitempty"`
 }
 
 type AddressUserDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AddressUserDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AddressUserDataStruct"`
 
 	UserCompany string `xml:"userCompany,omitempty"`
 
@@ -2882,7 +2882,7 @@ type AddressUserDataStruct struct {
 }
 
 type AddressInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AddressInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AddressInfoStruct"`
 
 	AddressType int32 `xml:"addressType,omitempty"`
 
@@ -2890,13 +2890,13 @@ type AddressInfoStruct struct {
 }
 
 type ArrayOfAddressinfostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfAddressinfostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfAddressinfostruct"`
 
 	Item []*AddressInfoStruct `xml:"item,omitempty"`
 }
 
 type SortOptionsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SortOptionsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SortOptionsStruct"`
 
 	SortType int32 `xml:"sortType,omitempty"`
 
@@ -2904,7 +2904,7 @@ type SortOptionsStruct struct {
 }
 
 type ItemPriceStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemPriceStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemPriceStruct"`
 
 	PriceType int32 `xml:"priceType,omitempty"`
 
@@ -2912,13 +2912,13 @@ type ItemPriceStruct struct {
 }
 
 type ArrayOfItempricestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItempricestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItempricestruct"`
 
 	Item []*ItemPriceStruct `xml:"item,omitempty"`
 }
 
 type UserInfoStruct struct {
-	// XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserInfoStruct"`
+	// XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserInfoStruct"`
 
 	UserId int32 `xml:"userId,omitempty"`
 
@@ -2932,7 +2932,7 @@ type UserInfoStruct struct {
 }
 
 type BidItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php BidItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php BidItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -2974,13 +2974,13 @@ type BidItemStruct struct {
 }
 
 type ArrayOfBiditemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfBiditemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfBiditemstruct"`
 
 	Item []*BidItemStruct `xml:"item,omitempty"`
 }
 
 type UserDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserDataStruct"`
 
 	UserId int64 `xml:"userId,omitempty"`
 
@@ -3028,7 +3028,7 @@ type UserDataStruct struct {
 }
 
 type InvoiceDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php InvoiceDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php InvoiceDataStruct"`
 
 	CompanyName string `xml:"companyName,omitempty"`
 
@@ -3036,7 +3036,7 @@ type InvoiceDataStruct struct {
 }
 
 type CompanyExtraDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CompanyExtraDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CompanyExtraDataStruct"`
 
 	CompanyType string `xml:"companyType,omitempty"`
 
@@ -3050,7 +3050,7 @@ type CompanyExtraDataStruct struct {
 }
 
 type CompanySecondAddressStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php CompanySecondAddressStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php CompanySecondAddressStruct"`
 
 	CompanyWorkerFirstName string `xml:"companyWorkerFirstName,omitempty"`
 
@@ -3068,7 +3068,7 @@ type CompanySecondAddressStruct struct {
 }
 
 type PharmacyDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PharmacyDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PharmacyDataStruct"`
 
 	PharmacyOpeningDate string `xml:"pharmacyOpeningDate,omitempty"`
 
@@ -3096,7 +3096,7 @@ type PharmacyDataStruct struct {
 }
 
 type AlcoholDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php AlcoholDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php AlcoholDataStruct"`
 
 	AlcoholOpeningDate string `xml:"alcoholOpeningDate,omitempty"`
 
@@ -3124,7 +3124,7 @@ type AlcoholDataStruct struct {
 }
 
 type RelatedPersonsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RelatedPersonsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RelatedPersonsStruct"`
 
 	SpouseFirstName string `xml:"spouseFirstName,omitempty"`
 
@@ -3132,13 +3132,13 @@ type RelatedPersonsStruct struct {
 }
 
 type FutureFilterOptionsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FutureFilterOptionsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FutureFilterOptionsStruct"`
 
 	FilterFormat int32 `xml:"filterFormat,omitempty"`
 }
 
 type FutureItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FutureItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FutureItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3170,13 +3170,13 @@ type FutureItemStruct struct {
 }
 
 type ArrayOfFutureitemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfFutureitemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfFutureitemstruct"`
 
 	Item []*FutureItemStruct `xml:"item,omitempty"`
 }
 
 type PaymentDetailsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentDetailsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentDetailsStruct"`
 
 	PayTransDetailsItId int64 `xml:"payTransDetailsItId,omitempty"`
 
@@ -3186,13 +3186,13 @@ type PaymentDetailsStruct struct {
 }
 
 type ArrayOfPaymentdetailsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPaymentdetailsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPaymentdetailsstruct"`
 
 	Item []*PaymentDetailsStruct `xml:"item,omitempty"`
 }
 
 type UserIncomingPaymentStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserIncomingPaymentStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserIncomingPaymentStruct"`
 
 	PayTransId int64 `xml:"payTransId,omitempty"`
 
@@ -3224,13 +3224,13 @@ type UserIncomingPaymentStruct struct {
 }
 
 type ArrayOfUserincomingpaymentstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserincomingpaymentstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserincomingpaymentstruct"`
 
 	Item []*UserIncomingPaymentStruct `xml:"item,omitempty"`
 }
 
 type UserIncomingPaymentRefundsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserIncomingPaymentRefundsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserIncomingPaymentRefundsStruct"`
 
 	PayRefundTransId int64 `xml:"payRefundTransId,omitempty"`
 
@@ -3246,13 +3246,13 @@ type UserIncomingPaymentRefundsStruct struct {
 }
 
 type ArrayOfUserincomingpaymentrefundsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserincomingpaymentrefundsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserincomingpaymentrefundsstruct"`
 
 	Item []*UserIncomingPaymentRefundsStruct `xml:"item,omitempty"`
 }
 
 type FilterPriceStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php FilterPriceStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php FilterPriceStruct"`
 
 	FilterPriceFrom float32 `xml:"filterPriceFrom,omitempty"`
 
@@ -3260,7 +3260,7 @@ type FilterPriceStruct struct {
 }
 
 type NotSoldFilterOptionsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php NotSoldFilterOptionsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php NotSoldFilterOptionsStruct"`
 
 	FilterFormat int32 `xml:"filterFormat,omitempty"`
 
@@ -3274,7 +3274,7 @@ type NotSoldFilterOptionsStruct struct {
 }
 
 type NotSoldItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php NotSoldItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php NotSoldItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3314,13 +3314,13 @@ type NotSoldItemStruct struct {
 }
 
 type ArrayOfNotsolditemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfNotsolditemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfNotsolditemstruct"`
 
 	Item []*NotSoldItemStruct `xml:"item,omitempty"`
 }
 
 type NotWonItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php NotWonItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php NotWonItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3360,13 +3360,13 @@ type NotWonItemStruct struct {
 }
 
 type ArrayOfNotwonitemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfNotwonitemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfNotwonitemstruct"`
 
 	Item []*NotWonItemStruct `xml:"item,omitempty"`
 }
 
 type PaymentItemsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentItemsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentItemsStruct"`
 
 	PayTransItId int64 `xml:"payTransItId,omitempty"`
 
@@ -3378,13 +3378,13 @@ type PaymentItemsStruct struct {
 }
 
 type ArrayOfPaymentitemsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPaymentitemsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPaymentitemsstruct"`
 
 	Item []*PaymentItemsStruct `xml:"item,omitempty"`
 }
 
 type PaymentSellersStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentSellersStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentSellersStruct"`
 
 	PayTransSellerId int32 `xml:"payTransSellerId,omitempty"`
 
@@ -3396,13 +3396,13 @@ type PaymentSellersStruct struct {
 }
 
 type ArrayOfPaymentsellersstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPaymentsellersstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPaymentsellersstruct"`
 
 	Item []*PaymentSellersStruct `xml:"item,omitempty"`
 }
 
 type UserPaymentStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserPaymentStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserPaymentStruct"`
 
 	PayTransId int64 `xml:"payTransId,omitempty"`
 
@@ -3424,13 +3424,13 @@ type UserPaymentStruct struct {
 }
 
 type ArrayOfUserpaymentstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserpaymentstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserpaymentstruct"`
 
 	Item []*UserPaymentStruct `xml:"item,omitempty"`
 }
 
 type PaymentsUserDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentsUserDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentsUserDataStruct"`
 
 	UserFullName string `xml:"userFullName,omitempty"`
 
@@ -3446,7 +3446,7 @@ type PaymentsUserDataStruct struct {
 }
 
 type PayoutAutoFrequencyStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PayoutAutoFrequencyStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PayoutAutoFrequencyStruct"`
 
 	FrequencyType int16 `xml:"frequencyType,omitempty"`
 
@@ -3456,7 +3456,7 @@ type PayoutAutoFrequencyStruct struct {
 }
 
 type PayoutAutoSettingsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PayoutAutoSettingsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PayoutAutoSettingsStruct"`
 
 	PayoutAutoAmount float32 `xml:"payoutAutoAmount,omitempty"`
 
@@ -3464,7 +3464,7 @@ type PayoutAutoSettingsStruct struct {
 }
 
 type PaymentsPayoutStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentsPayoutStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentsPayoutStruct"`
 
 	PayoutType int32 `xml:"payoutType,omitempty"`
 
@@ -3472,7 +3472,7 @@ type PaymentsPayoutStruct struct {
 }
 
 type PaymentsInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentsInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentsInfoStruct"`
 
 	PaymentsBalance float32 `xml:"paymentsBalance,omitempty"`
 
@@ -3486,7 +3486,7 @@ type PaymentsInfoStruct struct {
 }
 
 type UserPaymentRefundsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserPaymentRefundsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserPaymentRefundsStruct"`
 
 	PayRefundTransId int64 `xml:"payRefundTransId,omitempty"`
 
@@ -3502,13 +3502,13 @@ type UserPaymentRefundsStruct struct {
 }
 
 type ArrayOfUserpaymentrefundsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserpaymentrefundsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserpaymentrefundsstruct"`
 
 	Item []*UserPaymentRefundsStruct `xml:"item,omitempty"`
 }
 
 type UserPayoutStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserPayoutStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserPayoutStruct"`
 
 	PayTransId int64 `xml:"payTransId,omitempty"`
 
@@ -3526,13 +3526,13 @@ type UserPayoutStruct struct {
 }
 
 type ArrayOfUserpayoutstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserpayoutstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserpayoutstruct"`
 
 	Item []*UserPayoutStruct `xml:"item,omitempty"`
 }
 
 type PayoutPaymentsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PayoutPaymentsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PayoutPaymentsStruct"`
 
 	TranasctionId int64 `xml:"tranasctionId,omitempty"`
 
@@ -3550,13 +3550,13 @@ type PayoutPaymentsStruct struct {
 }
 
 type ArrayOfPayoutpaymentsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPayoutpaymentsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPayoutpaymentsstruct"`
 
 	Item []*PayoutPaymentsStruct `xml:"item,omitempty"`
 }
 
 type PayoutRefundFromStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PayoutRefundFromStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PayoutRefundFromStruct"`
 
 	TranasctionId int64 `xml:"tranasctionId,omitempty"`
 
@@ -3574,13 +3574,13 @@ type PayoutRefundFromStruct struct {
 }
 
 type ArrayOfPayoutrefundfromstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPayoutrefundfromstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPayoutrefundfromstruct"`
 
 	Item []*PayoutRefundFromStruct `xml:"item,omitempty"`
 }
 
 type PayoutRefundToStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PayoutRefundToStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PayoutRefundToStruct"`
 
 	TranasctionId int64 `xml:"tranasctionId,omitempty"`
 
@@ -3598,13 +3598,13 @@ type PayoutRefundToStruct struct {
 }
 
 type ArrayOfPayoutrefundtostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPayoutrefundtostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPayoutrefundtostruct"`
 
 	Item []*PayoutRefundToStruct `xml:"item,omitempty"`
 }
 
 type SellFilterOptionsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellFilterOptionsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellFilterOptionsStruct"`
 
 	FilterFormat int32 `xml:"filterFormat,omitempty"`
 
@@ -3622,7 +3622,7 @@ type SellFilterOptionsStruct struct {
 }
 
 type SellItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3668,13 +3668,13 @@ type SellItemStruct struct {
 }
 
 type ArrayOfSellitemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSellitemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSellitemstruct"`
 
 	Item []*SellItemStruct `xml:"item,omitempty"`
 }
 
 type SoldFilterOptionsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SoldFilterOptionsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SoldFilterOptionsStruct"`
 
 	FilterFormat int32 `xml:"filterFormat,omitempty"`
 
@@ -3688,7 +3688,7 @@ type SoldFilterOptionsStruct struct {
 }
 
 type SoldItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SoldItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SoldItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3734,13 +3734,13 @@ type SoldItemStruct struct {
 }
 
 type ArrayOfSolditemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSolditemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSolditemstruct"`
 
 	Item []*SoldItemStruct `xml:"item,omitempty"`
 }
 
 type WonItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php WonItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php WonItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3780,13 +3780,13 @@ type WonItemStruct struct {
 }
 
 type ArrayOfWonitemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfWonitemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfWonitemstruct"`
 
 	Item []*WonItemStruct `xml:"item,omitempty"`
 }
 
 type PaymentMethodStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PaymentMethodStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PaymentMethodStruct"`
 
 	PaymentMethodId string `xml:"paymentMethodId,omitempty"`
 
@@ -3798,13 +3798,13 @@ type PaymentMethodStruct struct {
 }
 
 type ArrayOfPaymentmethodstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPaymentmethodstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPaymentmethodstruct"`
 
 	Item []*PaymentMethodStruct `xml:"item,omitempty"`
 }
 
 type UserSentToDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserSentToDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserSentToDataStruct"`
 
 	UserId int64 `xml:"userId,omitempty"`
 
@@ -3824,7 +3824,7 @@ type UserSentToDataStruct struct {
 }
 
 type UserPostBuyDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php UserPostBuyDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php UserPostBuyDataStruct"`
 
 	UserData *UserDataStruct `xml:"userData,omitempty"`
 
@@ -3836,13 +3836,13 @@ type UserPostBuyDataStruct struct {
 }
 
 type ArrayOfUserpostbuydatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfUserpostbuydatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfUserpostbuydatastruct"`
 
 	Item []*UserPostBuyDataStruct `xml:"item,omitempty"`
 }
 
 type ItemPostBuyDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemPostBuyDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemPostBuyDataStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -3850,13 +3850,13 @@ type ItemPostBuyDataStruct struct {
 }
 
 type ArrayOfItempostbuydatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItempostbuydatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItempostbuydatastruct"`
 
 	Item []*ItemPostBuyDataStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormItemDealsVariantStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormItemDealsVariantStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormItemDealsVariantStruct"`
 
 	VariantName string `xml:"variantName,omitempty"`
 
@@ -3864,7 +3864,7 @@ type PostBuyFormItemDealsVariantStruct struct {
 }
 
 type PostBuyFormItemDealsAdditionalServiceStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormItemDealsAdditionalServiceStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormItemDealsAdditionalServiceStruct"`
 
 	AdditionalServiceDefinitionId string `xml:"additionalServiceDefinitionId,omitempty"`
 
@@ -3876,13 +3876,13 @@ type PostBuyFormItemDealsAdditionalServiceStruct struct {
 }
 
 type ArrayOfPostbuyformitemdealsadditionalservicestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformitemdealsadditionalservicestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformitemdealsadditionalservicestruct"`
 
 	Item []*PostBuyFormItemDealsAdditionalServiceStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormItemDealsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormItemDealsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormItemDealsStruct"`
 
 	DealId int64 `xml:"dealId,omitempty"`
 
@@ -3900,13 +3900,13 @@ type PostBuyFormItemDealsStruct struct {
 }
 
 type ArrayOfPostbuyformitemdealsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformitemdealsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformitemdealsstruct"`
 
 	Item []*PostBuyFormItemDealsStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormItemStruct"`
 
 	PostBuyFormItQuantity int32 `xml:"postBuyFormItQuantity,omitempty"`
 
@@ -3924,13 +3924,13 @@ type PostBuyFormItemStruct struct {
 }
 
 type ArrayOfPostbuyformitemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformitemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformitemstruct"`
 
 	Item []*PostBuyFormItemStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormShipmentTrackingStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormShipmentTrackingStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormShipmentTrackingStruct"`
 
 	PostBuyFormOperatorId int32 `xml:"postBuyFormOperatorId,omitempty"`
 
@@ -3942,13 +3942,13 @@ type PostBuyFormShipmentTrackingStruct struct {
 }
 
 type ArrayOfPostbuyformshipmenttrackingstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformshipmenttrackingstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformshipmenttrackingstruct"`
 
 	Item []*PostBuyFormShipmentTrackingStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormAddressStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormAddressStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormAddressStruct"`
 
 	PostBuyFormAdrCountry int32 `xml:"postBuyFormAdrCountry,omitempty"`
 
@@ -3974,7 +3974,7 @@ type PostBuyFormAddressStruct struct {
 }
 
 type PostBuyFormSellersStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormSellersStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormSellersStruct"`
 
 	PostBuyFormSellerId int32 `xml:"postBuyFormSellerId,omitempty"`
 
@@ -4002,13 +4002,13 @@ type PostBuyFormSellersStruct struct {
 }
 
 type ArrayOfPostbuyformsellersstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformsellersstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformsellersstruct"`
 
 	Item []*PostBuyFormSellersStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormForBuyersDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormForBuyersDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormForBuyersDataStruct"`
 
 	PostBuyFormId int64 `xml:"postBuyFormId,omitempty"`
 
@@ -4040,13 +4040,13 @@ type PostBuyFormForBuyersDataStruct struct {
 }
 
 type ArrayOfPostbuyformforbuyersdatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformforbuyersdatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformforbuyersdatastruct"`
 
 	Item []*PostBuyFormForBuyersDataStruct `xml:"item,omitempty"`
 }
 
 type PostBuyFormDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormDataStruct"`
 
 	PostBuyFormId int64 `xml:"postBuyFormId,omitempty"`
 
@@ -4100,13 +4100,13 @@ type PostBuyFormDataStruct struct {
 }
 
 type ArrayOfPostbuyformdatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyformdatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyformdatastruct"`
 
 	Item []*PostBuyFormDataStruct `xml:"item,omitempty"`
 }
 
 type PostBuyItemInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyItemInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyItemInfoStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -4114,13 +4114,13 @@ type PostBuyItemInfoStruct struct {
 }
 
 type ArrayOfPostbuyiteminfostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfPostbuyiteminfostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfPostbuyiteminfostruct"`
 
 	Item []*PostBuyItemInfoStruct `xml:"item,omitempty"`
 }
 
 type RefundsDealsListType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RefundsDealsListType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RefundsDealsListType"`
 
 	DealId int64 `xml:"dealId,omitempty"`
 
@@ -4144,13 +4144,13 @@ type RefundsDealsListType struct {
 }
 
 type ArrayOfRefundsdealslisttype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfRefundsdealslisttype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfRefundsdealslisttype"`
 
 	Item []*RefundsDealsListType `xml:"item,omitempty"`
 }
 
 type RefundDetailsType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RefundDetailsType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RefundDetailsType"`
 
 	RefundId int32 `xml:"refundId,omitempty"`
 
@@ -4164,7 +4164,7 @@ type RefundDetailsType struct {
 }
 
 type RefundListType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RefundListType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RefundListType"`
 
 	DealId int64 `xml:"dealId,omitempty"`
 
@@ -4186,13 +4186,13 @@ type RefundListType struct {
 }
 
 type ArrayOfRefundlisttype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfRefundlisttype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfRefundlisttype"`
 
 	Item []*RefundListType `xml:"item,omitempty"`
 }
 
 type ReasonInfoType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ReasonInfoType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ReasonInfoType"`
 
 	ReasonId int32 `xml:"reasonId,omitempty"`
 
@@ -4202,13 +4202,13 @@ type ReasonInfoType struct {
 }
 
 type ArrayOfReasoninfotype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfReasoninfotype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfReasoninfotype"`
 
 	Item []*ReasonInfoType `xml:"item,omitempty"`
 }
 
 type RelatedItemStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RelatedItemStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RelatedItemStruct"`
 
 	ItemId int64 `xml:"itemId,omitempty"`
 
@@ -4234,13 +4234,13 @@ type RelatedItemStruct struct {
 }
 
 type ArrayOfRelateditemstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfRelateditemstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfRelateditemstruct"`
 
 	Item []*RelatedItemStruct `xml:"item,omitempty"`
 }
 
 type RelatedItemsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RelatedItemsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RelatedItemsStruct"`
 
 	RelatedItemsInfo *ArrayOfRelateditemstruct `xml:"relatedItemsInfo,omitempty"`
 
@@ -4248,7 +4248,7 @@ type RelatedItemsStruct struct {
 }
 
 type SellFormType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellFormType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellFormType"`
 
 	SellFormId int32 `xml:"sellFormId,omitempty"`
 
@@ -4292,13 +4292,13 @@ type SellFormType struct {
 }
 
 type ArrayOfSellformtype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSellformtype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSellformtype"`
 
 	Item []*SellFormType `xml:"item,omitempty"`
 }
 
 type SellFormFieldsForCategoryStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellFormFieldsForCategoryStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellFormFieldsForCategoryStruct"`
 
 	SellFormFieldsList *ArrayOfSellformtype `xml:"sellFormFieldsList,omitempty"`
 
@@ -4308,7 +4308,7 @@ type SellFormFieldsForCategoryStruct struct {
 }
 
 type ShipmentTimeStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ShipmentTimeStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ShipmentTimeStruct"`
 
 	ShipmentTimeFrom int32 `xml:"shipmentTimeFrom,omitempty"`
 
@@ -4316,7 +4316,7 @@ type ShipmentTimeStruct struct {
 }
 
 type ShipmentDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ShipmentDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ShipmentDataStruct"`
 
 	ShipmentId int32 `xml:"shipmentId,omitempty"`
 
@@ -4328,13 +4328,13 @@ type ShipmentDataStruct struct {
 }
 
 type ArrayOfShipmentdatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfShipmentdatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfShipmentdatastruct"`
 
 	Item []*ShipmentDataStruct `xml:"item,omitempty"`
 }
 
 type ShipmentPaymentInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ShipmentPaymentInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ShipmentPaymentInfoStruct"`
 
 	ShipmentId int32 `xml:"shipmentId,omitempty"`
 
@@ -4348,13 +4348,13 @@ type ShipmentPaymentInfoStruct struct {
 }
 
 type ArrayOfShipmentpaymentinfostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfShipmentpaymentinfostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfShipmentpaymentinfostruct"`
 
 	Item []*ShipmentPaymentInfoStruct `xml:"item,omitempty"`
 }
 
 type SellerPaymentInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellerPaymentInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellerPaymentInfoStruct"`
 
 	ShipmentPaymentInfoPza *ArrayOfShipmentpaymentinfostruct `xml:"shipmentPaymentInfoPza,omitempty"`
 
@@ -4362,7 +4362,7 @@ type SellerPaymentInfoStruct struct {
 }
 
 type SellerShipmentDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellerShipmentDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellerShipmentDataStruct"`
 
 	SellerId int32 `xml:"sellerId,omitempty"`
 
@@ -4374,19 +4374,19 @@ type SellerShipmentDataStruct struct {
 }
 
 type ArrayOfSellershipmentdatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSellershipmentdatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSellershipmentdatastruct"`
 
 	Item []*SellerShipmentDataStruct `xml:"item,omitempty"`
 }
 
 type RelatedItemsShipmentDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RelatedItemsShipmentDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RelatedItemsShipmentDataStruct"`
 
 	SellerShipmentData *ArrayOfSellershipmentdatastruct `xml:"sellerShipmentData,omitempty"`
 }
 
 type ShipmentPriceTypeStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ShipmentPriceTypeStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ShipmentPriceTypeStruct"`
 
 	ShipmentPriceTypeId int32 `xml:"shipmentPriceTypeId,omitempty"`
 
@@ -4394,13 +4394,13 @@ type ShipmentPriceTypeStruct struct {
 }
 
 type ArrayOfShipmentpricetypestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfShipmentpricetypestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfShipmentpricetypestruct"`
 
 	Item []*ShipmentPriceTypeStruct `xml:"item,omitempty"`
 }
 
 type SiteJournal struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SiteJournal"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SiteJournal"`
 
 	RowId int64 `xml:"rowId,omitempty"`
 
@@ -4416,13 +4416,13 @@ type SiteJournal struct {
 }
 
 type ArrayOfSitejournal struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSitejournal"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSitejournal"`
 
 	Item []*SiteJournal `xml:"item,omitempty"`
 }
 
 type SiteJournalDealsStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SiteJournalDealsStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SiteJournalDealsStruct"`
 
 	DealEventId int64 `xml:"dealEventId,omitempty"`
 
@@ -4444,13 +4444,13 @@ type SiteJournalDealsStruct struct {
 }
 
 type ArrayOfSitejournaldealsstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSitejournaldealsstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSitejournaldealsstruct"`
 
 	Item []*SiteJournalDealsStruct `xml:"item,omitempty"`
 }
 
 type SiteJournalDealsInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SiteJournalDealsInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SiteJournalDealsInfoStruct"`
 
 	DealEventsCount int32 `xml:"dealEventsCount,omitempty"`
 
@@ -4458,7 +4458,7 @@ type SiteJournalDealsInfoStruct struct {
 }
 
 type SiteJournalInfo struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SiteJournalInfo"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SiteJournalInfo"`
 
 	ItemsNumber int32 `xml:"itemsNumber,omitempty"`
 
@@ -4466,7 +4466,7 @@ type SiteJournalInfo struct {
 }
 
 type StateInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php StateInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php StateInfoStruct"`
 
 	StateId int32 `xml:"stateId,omitempty"`
 
@@ -4474,25 +4474,25 @@ type StateInfoStruct struct {
 }
 
 type ArrayOfStateinfostruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfStateinfostruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfStateinfostruct"`
 
 	Item []*StateInfoStruct `xml:"item,omitempty"`
 }
 
 type MyAccountStruct2 struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php MyAccountStruct2"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php MyAccountStruct2"`
 
 	MyAccountArray *ArrayOfString `xml:"myAccountArray,omitempty"`
 }
 
 type ArrayOfMyaccountstruct2 struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfMyaccountstruct2"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfMyaccountstruct2"`
 
 	Item []*MyAccountStruct2 `xml:"item,omitempty"`
 }
 
 type ItemBilling struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemBilling"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemBilling"`
 
 	BiName string `xml:"biName,omitempty"`
 
@@ -4500,13 +4500,13 @@ type ItemBilling struct {
 }
 
 type ArrayOfItembilling struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfItembilling"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfItembilling"`
 
 	Item []*ItemBilling `xml:"item,omitempty"`
 }
 
 type MyContactList struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php MyContactList"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php MyContactList"`
 
 	ContactUserId int32 `xml:"contactUserId,omitempty"`
 
@@ -4538,13 +4538,13 @@ type MyContactList struct {
 }
 
 type ArrayOfMycontactlist struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfMycontactlist"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfMycontactlist"`
 
 	Item []*MyContactList `xml:"item,omitempty"`
 }
 
 type ItemTemplateCreateStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemTemplateCreateStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemTemplateCreateStruct"`
 
 	ItemTemplateOption int32 `xml:"itemTemplateOption,omitempty"`
 
@@ -4552,7 +4552,7 @@ type ItemTemplateCreateStruct struct {
 }
 
 type SysStatusType struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SysStatusType"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SysStatusType"`
 
 	CountryId int32 `xml:"countryId,omitempty"`
 
@@ -4572,13 +4572,13 @@ type SysStatusType struct {
 }
 
 type ArrayOfSysstatustype struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSysstatustype"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSysstatustype"`
 
 	Item []*SysStatusType `xml:"item,omitempty"`
 }
 
 type BlackListResStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php BlackListResStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php BlackListResStruct"`
 
 	UserId int64 `xml:"userId,omitempty"`
 
@@ -4586,13 +4586,13 @@ type BlackListResStruct struct {
 }
 
 type ArrayOfBlacklistresstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfBlacklistresstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfBlacklistresstruct"`
 
 	Item []*BlackListResStruct `xml:"item,omitempty"`
 }
 
 type RequestPayoutStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php RequestPayoutStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php RequestPayoutStruct"`
 
 	PayoutId int64 `xml:"payoutId,omitempty"`
 
@@ -4602,7 +4602,7 @@ type RequestPayoutStruct struct {
 }
 
 type StructSellAgain struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php StructSellAgain"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php StructSellAgain"`
 
 	SellItemId int64 `xml:"sellItemId,omitempty"`
 
@@ -4612,13 +4612,13 @@ type StructSellAgain struct {
 }
 
 type ArrayOfStructsellagain struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfStructsellagain"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfStructsellagain"`
 
 	Item []*StructSellAgain `xml:"item,omitempty"`
 }
 
 type StructSellFailed struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php StructSellFailed"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php StructSellFailed"`
 
 	SellItemId int64 `xml:"sellItemId,omitempty"`
 
@@ -4628,13 +4628,13 @@ type StructSellFailed struct {
 }
 
 type ArrayOfStructsellfailed struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfStructsellfailed"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfStructsellfailed"`
 
 	Item []*StructSellFailed `xml:"item,omitempty"`
 }
 
 type NewPostBuyFormSellerStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php NewPostBuyFormSellerStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php NewPostBuyFormSellerStruct"`
 
 	SellerId int32 `xml:"sellerId,omitempty"`
 
@@ -4650,13 +4650,13 @@ type NewPostBuyFormSellerStruct struct {
 }
 
 type ArrayOfNewpostbuyformsellerstruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfNewpostbuyformsellerstruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfNewpostbuyformsellerstruct"`
 
 	Item []*NewPostBuyFormSellerStruct `xml:"item,omitempty"`
 }
 
 type InvoiceInfoStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php InvoiceInfoStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php InvoiceInfoStruct"`
 
 	InvoiceAddressType int32 `xml:"invoiceAddressType,omitempty"`
 
@@ -4666,7 +4666,7 @@ type InvoiceInfoStruct struct {
 }
 
 type NewPostBuyFormCommonStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php NewPostBuyFormCommonStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php NewPostBuyFormCommonStruct"`
 
 	PaymentMethodId string `xml:"paymentMethodId,omitempty"`
 
@@ -4682,7 +4682,7 @@ type NewPostBuyFormCommonStruct struct {
 }
 
 type ActionDataStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ActionDataStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ActionDataStruct"`
 
 	ActionKey string `xml:"actionKey,omitempty"`
 
@@ -4690,13 +4690,13 @@ type ActionDataStruct struct {
 }
 
 type ArrayOfActiondatastruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfActiondatastruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfActiondatastruct"`
 
 	Item []*ActionDataStruct `xml:"item,omitempty"`
 }
 
 type TransactionPayByLinkStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php TransactionPayByLinkStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php TransactionPayByLinkStruct"`
 
 	ActionHttpMethod string `xml:"actionHttpMethod,omitempty"`
 
@@ -4706,7 +4706,7 @@ type TransactionPayByLinkStruct struct {
 }
 
 type PostBuyFormStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php PostBuyFormStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php PostBuyFormStruct"`
 
 	TransactionId int64 `xml:"transactionId,omitempty"`
 
@@ -4716,7 +4716,7 @@ type PostBuyFormStruct struct {
 }
 
 type ItemInfoExt struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ItemInfoExt"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ItemInfoExt"`
 
 	ItId int64 `xml:"itId,omitempty"`
 
@@ -4816,7 +4816,7 @@ type ItemInfoExt struct {
 }
 
 type ShowUserFeedbacks struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ShowUserFeedbacks"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ShowUserFeedbacks"`
 
 	UserFLastWeek int32 `xml:"userFLastWeek,omitempty"`
 
@@ -4830,7 +4830,7 @@ type ShowUserFeedbacks struct {
 }
 
 type SellRatingAverageStruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php SellRatingAverageStruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php SellRatingAverageStruct"`
 
 	SellRatingGroupTitle string `xml:"sellRatingGroupTitle,omitempty"`
 
@@ -4838,7 +4838,7 @@ type SellRatingAverageStruct struct {
 }
 
 type ArrayOfSellratingaveragestruct struct {
-	XMLName xml.Name `xml:"https://webapi.allegro.pl.allegrosandbox.pl/service.php ArrayOfSellratingaveragestruct"`
+	XMLName xml.Name `xml:"https://webapi.allegro.pl/service.php ArrayOfSellratingaveragestruct"`
 
 	Item []*SellRatingAverageStruct `xml:"item,omitempty"`
 }
@@ -4849,7 +4849,7 @@ type ServicePort struct {
 
 func NewServicePort(url string, tls bool, auth *BasicAuth) *ServicePort {
 	if url == "" {
-		url = "https://webapi.allegro.pl.allegrosandbox.pl/service.php"
+		url = "https://webapi.allegro.pl/service.php"
 	}
 	client := NewSOAPClient(url, tls, auth)
 
@@ -4860,7 +4860,7 @@ func NewServicePort(url string, tls bool, auth *BasicAuth) *ServicePort {
 
 func NewServicePortWithTLSConfig(url string, tlsCfg *tls.Config, auth *BasicAuth) *ServicePort {
 	if url == "" {
-		url = "https://webapi.allegro.pl.allegrosandbox.pl/service.php"
+		url = "https://webapi.allegro.pl/service.php"
 	}
 	client := NewSOAPClientWithTLSConfig(url, tlsCfg, auth)
 
