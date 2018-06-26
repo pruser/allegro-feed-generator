@@ -11,16 +11,19 @@ import (
 )
 
 type RequestCreator interface {
-	CreateRequest(key model.WebAPIKey, sortSettings model.SortSettings, filterSettings model.FilterSettings) (api.SOAPEnvelope, error)
+	CreateRequest(sortSettings model.SortSettings, filterSettings model.FilterSettings) (api.SOAPEnvelope, error)
 }
 
-type SoapRequestCreator struct{}
+type SoapRequestCreator struct {
+	webApiKey model.WebAPIKey
+	webApiUrl string
+}
 
-func (*SoapRequestCreator) CreateRequest(key model.WebAPIKey, sortSettings model.SortSettings, filterSettings model.FilterSettings) (api.SOAPEnvelope, error) {
+func (rc *SoapRequestCreator) CreateRequest(sortSettings model.SortSettings, filterSettings model.FilterSettings) (api.SOAPEnvelope, error) {
 	sortOptions := convertSortSettings(sortSettings)
 	filterOptions, _ := convertFilterSettings(filterSettings)
 
-	doGetItemsListRequest := api.DoGetItemsListRequest{WebAPIKey: string(key), CountryID: 1, FilterOptions: &filterOptions, SortOptions: &sortOptions}
+	doGetItemsListRequest := api.DoGetItemsListRequest{WebAPIKey: string(rc.webApiKey), CountryID: 1, FilterOptions: &filterOptions, SortOptions: &sortOptions}
 
 	content, err := xml.MarshalIndent(doGetItemsListRequest, " ", " ")
 	if err != nil {
@@ -29,7 +32,7 @@ func (*SoapRequestCreator) CreateRequest(key model.WebAPIKey, sortSettings model
 
 	return api.SOAPEnvelope{
 		Soapenv: "http://schemas.xmlsoap.org/soap/envelope/",
-		Ser:     "https://webapi.allegro.pl.allegrosandbox.pl/service.php",
+		Ser:     rc.webApiUrl,
 		Body: api.SOAPBody{
 			Data: content,
 		},

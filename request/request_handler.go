@@ -24,6 +24,7 @@ type RequestHandler struct {
 	requestCreator  RequestCreator
 	responseCreator ResponseCreator
 	webAPIKey       model.WebAPIKey
+	webApiUrl       string
 	urlbase         string
 }
 
@@ -48,7 +49,7 @@ func (rh *RequestHandler) CreateFeed(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// request creation
-	soap, err := rh.requestCreator.CreateRequest(rh.webAPIKey, sortSettings, filterSettings)
+	soap, err := rh.requestCreator.CreateRequest(sortSettings, filterSettings)
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, fmt.Errorf("can't create request message, err %v", err))
 		return
@@ -61,7 +62,7 @@ func (rh *RequestHandler) CreateFeed(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// sending request
-	resp, err := rh.client.Post("https://webapi.allegro.pl.allegrosandbox.pl/service.php", "application/xml", bytes.NewBuffer(res))
+	resp, err := rh.client.Post(rh.webApiUrl, "application/xml", bytes.NewBuffer(res))
 	if err != nil {
 		writeError(w, http.StatusInternalServerError, fmt.Errorf("can't send request message, err %v", err))
 		return
@@ -97,12 +98,13 @@ func (rh *RequestHandler) CreateFeed(w http.ResponseWriter, r *http.Request) {
 
 func (rh *RequestHandler) Health(w http.ResponseWriter, r *http.Request) {}
 
-func NewRequestHandler(apikey model.WebAPIKey, urlbase string) *RequestHandler {
+func NewRequestHandler(apikey model.WebAPIKey, webApiUrl, urlbase string) *RequestHandler {
 	return &RequestHandler{
 		client:          http.DefaultClient,
 		parser:          &QueryParser{},
-		requestCreator:  &SoapRequestCreator{},
+		requestCreator:  &SoapRequestCreator{webApiKey: apikey, webApiUrl: webApiUrl},
 		responseCreator: &DefaultResponseCreator{urlBase: urlbase, timeProvider: &RealTimeProvider{}},
 		webAPIKey:       apikey,
+		webApiUrl:       webApiUrl,
 	}
 }

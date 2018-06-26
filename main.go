@@ -19,7 +19,7 @@ func main() {
 	}
 	config.Print()
 
-	handler := request.NewRequestHandler(config.WebAPIKey, config.UrlBase)
+	handler := request.NewRequestHandler(config.WebAPIKey, config.WebAPIUrl, config.UrlBase)
 	http.HandleFunc("/feed", handler.CreateFeed)
 	http.HandleFunc("/health", handler.Health)
 
