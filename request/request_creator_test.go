@@ -1,8 +1,9 @@
 package request
 
 import (
-	"allegro/model"
 	"testing"
+
+	"github.com/pruser/allegro-feed-generator/model"
 
 	"github.com/stretchr/testify/assert"
 )
